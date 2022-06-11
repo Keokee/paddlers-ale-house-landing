@@ -3,39 +3,72 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Paddler's Ale House</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
+  <meta property="og:title" content="Paddler's Ale House">
   <meta property="og:type" content="">
-  <meta property="og:url" content="">
+  <meta property="og:url" content="https://paddlersalehouse.com">
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+  <style>
+    main {
+      /* fit main to viewport */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(/img/taps.jpeg);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      text-shadow: #000 0px 0px 5px;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 1rem 0;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    .dark-bg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: hsla(0, 100%, 0%, 0.55);
+      width: 100%;
+      padding: 4rem 0;
+    }
+    .dark-bg img {
+      max-height: 20em;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  
+  <main>
+    <div class="dark-bg">
+      <img src="/img/paddlers_logo.png" alt="Paddler's Ale House Logo" title="Paddler's Ale House Logo">
+      <h1>Paddler's Ale House</h1>
+      <h2>Coming Soon</h2>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
